@@ -14,6 +14,10 @@ public interface StudentTripsRepository extends JpaRepository<StudentTrips, Inte
 
     StudentTrips findStudentTripsById(Integer id);
 
+
+    @Query("select c from StudentTrips c where c.student.id=?1")
+    List<StudentTrips> studentTrips(Integer id);
+
     @Query("select st from StudentTrips st where lower(st.type) = lower(:type)")
     List<StudentTrips> findByTypeIgnoreCase(String type);
 

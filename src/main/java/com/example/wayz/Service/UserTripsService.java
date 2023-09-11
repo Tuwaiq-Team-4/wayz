@@ -133,4 +133,24 @@ public class UserTripsService {
     }
 
 
+    public void cashOut(Integer id){
+        List<UserTrips> allCompleted = userTripsRepository.findAllCompleted(id);
+        Integer tripsCount = userTripsRepository.countTrips(id);
+        if (allCompleted.isEmpty()){
+            throw new ApiException("you do not have any Completed trips");
+        }
+        Driver driver = driverRepository.findDriverById(id);
+        if (driver.getUser().getRole()=="DRIVER"){
+            throw new ApiException("you are not allowed to do that , you most be driver");
+        }
+        for(int i=0;i<allCompleted.size();i++) {
+            allCompleted.get(i).setStatus("paid");
+            if (tripsCount != 0) {
+                driver.setUnCashedTrips(tripsCount);
+                driver.setBalance(tripsCount * 8);
+                tripsCount--;
+            }
+        }
+    }
+
 }

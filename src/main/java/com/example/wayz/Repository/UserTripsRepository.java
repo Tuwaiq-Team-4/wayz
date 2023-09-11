@@ -20,4 +20,12 @@ public interface UserTripsRepository extends JpaRepository<UserTrips, Integer> {
 
 
     UserTrips findUserTripsById(Integer userTripId);
+
+    @Query("select c from user_trips c where c.status='completed' and c.driver.id=?1")
+    List<UserTrips> findAllCompleted(Integer id);
+
+    @Query("select count (c) from user_trips c where c.status='completed' and c.driver.id=?1")
+    Integer countTrips(Integer id);
+
+
 }

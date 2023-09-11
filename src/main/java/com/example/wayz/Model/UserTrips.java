@@ -34,6 +34,4 @@ public class UserTrips {
     @Column(nullable = false)
     private String status;
 
-
-
 }
