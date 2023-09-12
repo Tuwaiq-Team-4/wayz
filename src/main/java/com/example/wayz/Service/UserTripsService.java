@@ -145,12 +145,12 @@ public class UserTripsService {
         }
         for(int i=0;i<allCompleted.size();i++) {
             allCompleted.get(i).setStatus("paid");
-            if (tripsCount != 0) {
+        }
+           if (tripsCount != 0) {
                 driver.setUnCashedTrips(tripsCount);
                 driver.setBalance(tripsCount * 8);
                 tripsCount--;
             }
-        }
     }
 
 }
