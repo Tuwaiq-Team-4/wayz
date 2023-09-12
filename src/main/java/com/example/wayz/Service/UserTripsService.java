@@ -149,7 +149,7 @@ public class UserTripsService {
            if (tripsCount != 0) {
                 driver.setUnCashedTrips(tripsCount);
                 driver.setBalance(tripsCount * 8);
-                tripsCount--;
+                tripsCount=0;
             }
     }
 
