@@ -46,32 +46,8 @@ in 4 days:
 ![Image](https://github.com/Tuwaiq-Team-4/wayz/assets/43024659/c7247b30-0c00-42fb-9c33-ce185521f14d)
 
 
-
 ## 4. [Postman Documentation](https://documenter.getpostman.com/view/28987367/2s9YC2ztZu)
 
 
-[//]: # (## 5. Use Case Diagram)
-
 ## 5. [Canva Presentation](https://www.canva.com/design/DAFuIYG7-jE/5bv9mME-AeUKfhUpktWrow/edit?utm_content=DAFuIYG7-jE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
-
-
-
-
-
-# Abdullah Tasks
-
-
-- [x] initialize git and project with saleh
-- [x] worked in Figma with all team members
-- [x] worked in ERD with all team members
-- [x] worked in user feature
-- [x] worked in model relations with all team members
-- [x] worked on some pattern validations
-- [x] add swagger and generate postman
-- [x] worked in driver trips feature with all team members
-- [x] worked in user trips with all team members
-- [x] test project workflow in postman with all team members
-
----
 
